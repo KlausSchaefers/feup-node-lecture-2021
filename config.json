@@ -1,0 +1,10 @@
+{
+  "jwtSecret": "asdkljsdhiofhijwefiijvijhsVI0+GJ00JF",
+  "jwtExpires": "24h",
+  "dataPath": "./data",
+  "mailServer": "smtp.gmail.com",
+  "mailUser": "support@quant-ux.com",
+  "mailPassword": "d9d4d08f458c8f7fb29495cc552c90c5517b79a0b564fcaf2c2f7c460c476dcb",
+  "mailDebug": true,
+  "templateFolder": "../luisa-ui/dist"
+}
