@@ -17,7 +17,7 @@ export async function createApp () {
 
 
   // create services and controllers
-  let studentController = new StudentController()
+  let studentController = new StudentController('feup')
 
   // create express stuff
   const app = express();

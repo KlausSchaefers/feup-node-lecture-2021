@@ -10,8 +10,8 @@ export class Student {
     @Column()
     email: string;
 
-    @Column()
-    domain: string;
+    @Column({nullable: true })
+    domain: string = '';
 
     @Column({nullable: true })
     name: string = '';
