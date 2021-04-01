@@ -5,10 +5,18 @@ import {Student} from "../entity/Student";
 
 export default class StudentController {
 
+  domain: string = 'Default'
+
+  constructor (key: string) {
+    this.domain = key
+
+    type status = 'learning' | 'sleeping' | 'eating'
+  }
+
   async create (req: Request, res: Response) {
-    console.debug('StudentController.create()')
     try {
       let body = req.body
+      body.domain = this.domain
       const result = await getRepository(Student).save(body)
       res.send(result)
     } catch (error) {
@@ -17,7 +25,7 @@ export default class StudentController {
   }
 
   async findAll (req: Request, res: Response) {
-      let students = await getRepository(Student).find()
+      let students = await getRepository(Student).find({domain: this.domain})
       res.send(students)
   }
 }

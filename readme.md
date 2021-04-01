@@ -14,5 +14,16 @@ npm install
 3) Run test cases to make sure everything works
 
 ```bash
-npm run server
+npm run test
 ```
+
+3) Launch Server
+```bash
+npm run serve
+```
+
+
+## Tasks
+
+1) Create a new class
+
